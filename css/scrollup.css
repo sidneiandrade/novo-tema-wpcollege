@@ -1,0 +1,13 @@
+/*Scroll Up*/
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background: url(../img/arrow-up2.png) no-repeat center;
+    bottom: 50px;
+    right: 40px;
+    display: none;
+    text-indent: -9999px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
