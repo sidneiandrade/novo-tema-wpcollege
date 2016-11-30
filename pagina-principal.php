@@ -60,9 +60,22 @@
     <p>Veja mais postagens do WP College clicando no botão abaixo.</p>
    <a class="btn btn-primary" href="#" role="button">Mais Postagens</a>
   </div>
-
 </div>
   <?php endwhile; else: endif; ?>
 <!-- Fecha Ultimas Postagens -->
+
+<!-- Box Promoções e Templates -->
+<div class="row">
+  <div class="container">
+    <div class="col-md-6">
+      <h1>Promoções de Hospedagem</h1>
+    </div>
+    <div class="col-md-6">
+      <h1>Promoções de Templates e Plugins</h1>
+    </div>
+  </div>
+</div>
+<!-- Box Promoções e Templates -->
+
 <!-- Criação do site -->
 <?php get_footer(); ?>
