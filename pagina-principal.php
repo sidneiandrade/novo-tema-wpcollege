@@ -69,9 +69,11 @@
   <div class="container">
     <div class="col-md-6">
       <h1>Promoções de Hospedagem</h1>
+      <p>promoções de hospedagem aqui</p>
     </div>
     <div class="col-md-6">
       <h1>Promoções de Templates e Plugins</h1>
+      <p>Promoções de temas e plugins aqui</p>
     </div>
   </div>
 </div>
