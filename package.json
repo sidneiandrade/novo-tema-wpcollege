@@ -1,0 +1,22 @@
+{
+  "name": "novo-template-wpcollege",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidneiandrade/novo-tema-wpcollege.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidneiandrade/novo-tema-wpcollege/issues"
+  },
+  "homepage": "https://github.com/sidneiandrade/novo-tema-wpcollege#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
