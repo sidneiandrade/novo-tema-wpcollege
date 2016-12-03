@@ -1,12 +1,19 @@
-var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
+'use strict'; 
 
-// task para o sass
-gulp.task('sass', function(){
-	return sass('sass/*.sass').pipe(gulp.dest('css'))
-});
+var gulp = require('gulp'); 
+var sass = require('gulp-sass');
+var watch = require('gulp-watch'); 
 
-// task default gulp
+gulp.task('sass', function () {
+	return gulp.src('sass/**/*.sass')
+	.pipe(sass().on('error', sass.logError))
+	.pipe(gulp.dest('css')); 
+}); 
+
+gulp.task('watch', function () { 
+	gulp.watch('sass/**/*.sass', ['sass']); 
+}); 
+
 gulp.task('default', function(){
 
 });
