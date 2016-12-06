@@ -1,23 +1,21 @@
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <!-- Criação do Site -->
-<!-- Abre Titulo Paginas Internas -->
-<div class="titulo-paginas-internas">
-  <div class="container">
-    <h2><i class="fa fa-pencil" aria-hidden="true"></i> <?php the_title(); ?></h2>
-    <p class="data-publicacao"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> publicado em <?php the_time('d/m/Y') ?></p>
-  </div>
-</div>
-<!-- Fecha Títulos Paginas Internas -->
 
-<!-- Abre Conteúdo -->
-<div class="conteudo-pagina">
+
   <div class="container">
-	<div class="col-md-8">
-		<?php the_content(); ?>
-		<p><?php the_field('descricao_evento'); ?></p>
-		<p><?php the_field('descricao_informativo'); ?></p>
-	</div>
+    <div class="col-md-8">
+    <div class="breadcrumb-post"><p><?php wp_custom_breadcrumbs(); ?></p></div>
+    <h2><?php the_title(); ?></h2>
+    <p><?php the_author(); ?> &bull; 
+    <i class="fa fa-calendar-check-o" aria-hidden="true"></i> <?php the_time('d/m/Y') ?> &bull; 
+    <?php $my_var = get_comments_number( $post_id ); ?>
+    </p>
+    <?php the_post_thumbnail('img-post'); ?>
+    <?php the_content(); ?>
+    </div>
+
+
       <!-- Publicidade Eventos -->
       <div class="col-md-2">
         <div class="pub-300x600">
@@ -34,7 +32,6 @@
       </div>
       <!-- Publicidade Eventos -->
   </div>
-</div>
 
 <!-- Fecha Conteúdo -->
 <!-- Criação do site -->

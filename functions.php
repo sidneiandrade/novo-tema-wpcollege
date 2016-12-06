@@ -40,7 +40,7 @@ remove_action('wp_head', 'wp_generator');
 
 // Adicionar Thumbnail
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 165, 165 );
+add_image_size( 'img-post', 740, 9999 );
 
 // Adicionar Breadcrumb
 
